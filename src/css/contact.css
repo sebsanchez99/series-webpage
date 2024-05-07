@@ -6,7 +6,7 @@
 }
 
 .form-container {
-    margin: 100px;
+    margin: 100px 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .container-right {
-    max-width: 650px;
+    max-width: 500px;
     padding: 28px;
     margin: 28px;
     box-shadow: 0 15px 20px #abb2b9;
