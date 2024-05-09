@@ -333,7 +333,8 @@ footer {
 
 }
 
-@media ( max-width: 950px ) {
+/* todo: revisar footer para reponsive de celular */
+@media ( max-width: 570px ) {
     .series-section {
         height: 100vh;
     }
