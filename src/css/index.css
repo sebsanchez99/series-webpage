@@ -422,10 +422,9 @@ footer {
 
 }
 
-/* todo: revisar footer para reponsive de celular */
-@media ( max-width: 570px ) {
+@media ( max-width: 580px ) {
     .series-section {
-        height: 100vh;
+        height: 150vh;
     }
     
     .main-image {
