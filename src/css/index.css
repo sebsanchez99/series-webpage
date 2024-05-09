@@ -3,38 +3,161 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-.menu {
-    display: flex;
-    justify-content:  space-between;
-    align-items: center;
-    padding: 10px;
-    color: #fff;
-    background-color: #64b5f6;
-    -webkit-box-shadow: 0px 11px 22px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 11px 22px -8px rgba(0,0,0,0.75);
-    box-shadow: 0px 11px 22px -8px rgba(0,0,0,0.75);
+body{
+    background-color: black;
 }
 
-.menu-header {
+header {
+    width: 100%;
+    top: 0;
+    right: 0;
+    /* Superpone un elemento de otro dependiendo del valor */
+    z-index: 1000;
+    padding:  35px 7%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    /* Crea efectos de transición suaves, all: se aplica a todas las propiedades, ease: indica el tipo de curva de aceleración de la transición */
+    transition: all .50s ease;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+
 }
 
 .menu-links {
-    font-size: 20px;
     display: flex;
-    gap: 10px;
     list-style: none;
 }
 
 .menu-links a {
+    /* Elementos inline(<span>, <a> se alinean con el texto a su alrededor) */
+    display: inline-block;
+    margin: 0 35px;
+    font-size: 18px;
+    transition: all .6s ease;
     color: #fff;
-    padding: 10px;
 }
 
+/* todo: aplicar colores de hover */
+.menu-links a:hover {
+    color: #1565c0;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.series-button {
+    display: inline-block;
+    padding: 9px 24px;
+    background: transparent;
+    border: 2px solid #64b5f6;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .6s ease;
+    color: #fff;
+}
+
+.series-button:hover {
+    transform: translateY(-5px);
+    border: 2px solid #1565c0;
+}
+
+#menu-icon {
+    color: #fff;
+    font-size: 42px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+.series-section {
+    position: relative;
+    padding: 0 14%;
+    width: 100%;
+    /* vh: Viewport Height, viewport es la parte visible de la pantalla, ocupa el 100% del alto de la pantalla */
+    height: 100vh;
+    display: grid;
+    /* Se define la estructura de las columnas, 2 columnas de tamaño igual */
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.series-text h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.series-text h5 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.series-text p {
+    width: 100%;
+    max-width: 620px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.catalogue-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.catalogue-button {
+    display: inline-block;
+    padding: 13px 32px;
+    background: #00a6fb;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .6s ease;
+    margin-right: 20px;
+}
+
+.catalogue-button:hover {
+    transform: scale(1.1);
+}
+
+.scroll {
+    position: absolute;
+    top: 92%;
+    right: 7%;
+    transform: translateY(-50%);
+}
+
+.scroll a {
+   font-size: 16px;
+   color: #00a6fb; 
+}
+
+.scroll i {
+    font-size: 20px;
+    margin-right: 6px;
+}
 
 footer {
     bottom: 0;
@@ -81,6 +204,12 @@ footer {
     padding: 8px;
     border-radius: 50%;
     width: 35px;
+    transition: all .5s;
+}
+
+.social-media li a:hover {
+    transform: translateY(-5px);
+    color: #1565c0;
 }
 
 .footer-menu {
@@ -122,26 +251,99 @@ footer {
 }
 
 /* Diseño responsive*/
-@media ( max-width: 768px ) {
-    .menu {
-        flex-direction: column;
+@media ( max-width: 1770px ) {
+    header {
+        padding: 22px 4%;
     }
-
+    
     .menu-links {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
+        padding: 0 4%;
     }
 
-    .menu-links li {
-        padding: 10px;
+    .scroll {
+        right: 4%;
     }
 
-    .menu-links li:hover {
-        background-color: #00a6fb;
+}
+
+@media ( max-width: 1570px ) {
+    .series-text h1 {
+        font-size: 45px;
     }
 }
 
+@media ( max-width: 950px ) {
+    #menu-icon {
+        display: block;
+    }
+    .series-text h1 {
+        font-size: 40px;
+    }
+
+    .menu-links {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 100px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        /* Aplica efectos visuales a la zona que está detrás del elemento */
+        backdrop-filter: blur(32px);
+        transition: all .6s ease-in-out;
+    }
+
+    .menu-links a {
+        display: block;
+        padding: 0;
+        margin: 0px 0px 25px 0px;
+    }
+
+    .menu-links.open {
+        left: 0;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .series-section {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .series-text {
+        padding-top: 130px;
+    }
+
+    .main-image {
+        height: 500px;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .main-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
+
+@media ( max-width: 950px ) {
+    .series-section {
+        height: 100vh;
+    }
+    
+    .main-image {
+        height: 360px;
+        width:  360px;
+        margin: 0 auto;
+    }
+}
 
 
 
