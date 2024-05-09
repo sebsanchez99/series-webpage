@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Estilo de letra -->
+    <!--todo: cambiar Estilo de letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -16,25 +16,47 @@
 <body>
     
     <header>
-        <nav class="menu">
             
-            <div class="menu-header">
-                <img src="../assets/img/logo.png" alt="Logo" class="logo">
-            </div>
+            <a href="" class="logo">
+                <img src="../assets/img/logo.png" alt="Logo" >
+            </a>
             
             <!-- Lista para el menú -->
             <ul class="menu-links">
                 <li><a href="index.html"><i class="fa fa-home"></i> Inicio</a></li>
-                <li><a href="screens/categories.html"><i class="fa fa-search"></i> Categorías</a></li>
                 <li><a href="screens/contact.html"><i class="fa fa-envelope"></i> Contacto</a></li>
             </ul>
-        </nav>
+
+            <div class="right-content">
+                <a href="" class="series-button">Ver Series</a>
+                <div class="fa fa-bars" id="menu-icon"></div>
+            </div>
+    
     </header>
     
-    <!-- TODO: Realizar contenido de inicio de página -->
     <main>
-       
+        <section class="series-section">
+            <div class="series-text">
+                <h5>¿Buscas tu próxima serie favorita?</h5>
+                <h1>SensaSeries: Donde las series son magia</h1>
+                <p>Descubre recomendaciones personalizadas y encuentra las joyas ocultas de la televisión.</p>
+                
+                <div class="catalogue-button-container">
+                    <a href="" class="catalogue-button">Ver catalogo</a>
+                </div>
+
+            </div>
+            <div class="main-image">
+                <img src="../assets/img/main-image.png" alt="">
+            </div>
+        </section> 
     </main>
+    <div class="scroll">        
+        <a href="">
+            <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+            Ir abajo
+        </a>
+    </div>
     
     <footer>
         <div class="footer-content">
@@ -56,6 +78,8 @@
             <p>Diseñado Por -Sebastián Sánchez ADSO 2900002</p>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
