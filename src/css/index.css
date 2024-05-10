@@ -143,9 +143,27 @@ header {
     transform: scale(1.1);
 }
 
+.info-section {
+    background-color: #fff;
+    display: flex;
+    padding: 15px 15px 0 15px;
+    gap: 4px
+}
+
+.info-text {
+    width: 100%;
+    padding: 30px;
+}
+
+.info-text p{
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
 .catalogue {
     background-color: #fff;
-    margin: 70px 0;
+    padding: 70px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -232,7 +250,7 @@ header {
 }
 
 .scroll {
-    position: absolute;
+    position: fixed;
     top: 92%;
     right: 7%;
     transform: translateY(-50%);
@@ -432,6 +450,12 @@ footer {
         width:  360px;
         margin: 0 auto;
     }
+
+    .info-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
 
 
