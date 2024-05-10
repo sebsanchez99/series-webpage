@@ -1,3 +1,4 @@
+/* Inicio estilos para sección de formulario */
 .body-form {
     display: flex;
     align-items: center;
@@ -118,6 +119,8 @@
     background-color: #64b5f6;
 }
 
+
+/* Inicio estilos para sección de información de ubicación */
 .map-section {
     padding-bottom: 4%;
     display: flex;
@@ -158,7 +161,7 @@
     border: solid 2px #1565c0;
 }
 
-
+/* Diseño responsive */
 @media ( max-width: 950px ) {
     .map-info {
         text-align: center;
