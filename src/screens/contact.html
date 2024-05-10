@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos de letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Importación de iconos de Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Estilos css -->
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/contact.css">    
     <title>Contact</title>
 </head>
 <body>
     
-    <header>
-       
-            
+    <header>   
+        <!-- Inicio de menú de navegación -->
         <a href="../index.html" class="logo">
             <img src="../../assets/img/logo.png" alt="Logo" >
         </a>
@@ -26,96 +28,130 @@
             <li><a href="./contact.html"><i class="fa fa-envelope"></i> Contacto</a></li>
         </ul>
 
+        <!-- Cotenido de botón  -->
         <div class="right-content">
             <a href="" class="series-button">Ver Series<i class="fa fa-play" aria-hidden="true"></i></a>
             <div class="fa fa-bars" id="menu-icon"></div>
         </div>
+        <!-- Fin de menú de navegación -->
 
     </header>
 
-        <main>
-            <section class="form-container" id="top">
-                <div class="container-left">
-                    <img src="../../assets/img/contact-image.png" alt="">
-                </div>
-                <div class="container-right">
-                    <form action="" class="form-contact">
-                        <h2>Contáctanos</h2>
-                        <div class="content">
-                            <div class="input-box">
-                                <label for="">Nombre Completo</label>
-                                <input type="text" placeholder="Ingrese su nombre completo" required>
-                            </div>
-                            <div class="input-box">
-                                <label for="">Correo Electrónico</label>
-                                <input type="email" placeholder="Ingrese su correo electrónico" required>
-                            </div>
-                            <div class="input-box">
-                                <label for="">Número teléfonico</label>
-                                <input type="tel" placeholder="Ingrese su número teléfonico" required>
-                            </div>
-                            <div class="input-box">
-                                <label for="">Ciudad</label>
-                                <input type="text" placeholder="Ingrese su ciudad" required>
-                            </div>
-                            <div class="input-box">
-                                <label for="">Mensaje</label>
-                                <textarea name="" id=""  cols="100" rows="5"></textarea>
-                            </div>
-                        </div>
-                        <div class="terms">
-                            <input type="radio" name="term&conditions">
-                            <label for="term&conditions">Aceptar terminos y condiciones</label>
-                        </div>
-                        <div class="button-container">
-                            <button type="submit">Envíar</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <section class="map-section">
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8708984342657!2d-74.09440462636066!3d4.617110142379315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f996f79f4e283%3A0x5856b6b66ab6bd34!2sCENIGRAF!5e0!3m2!1sen!2sco!4v1715321490407!5m2!1sen!2sco" width="500" height="400" style="border:4;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="map-info">
-                    <h2>Ubícanos</h2>
-                    <p>Cl. 15 #31-42, Bogotá CENIGRAF</p>
-                    <div class="social-media-contact">
-                        <a href="" class="fa fa-whatsapp"></a>
-                        <a href="" class="fa fa-twitter"></a>
-                        <a href="" class="fa fa-youtube"></a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <div class="scroll">        
-            <a href="#top">
-                <i class="fa fa-hand-o-up" aria-hidden="true"></i>
-                Ir arriba
-            </a>
-        </div>
+    <main>
+        <!-- Inicio de sección de formulario -->
+        <section class="form-container" id="top">
 
+            <!-- Contenedor de la izquierda -->
+            <div class="container-left">
+                <img src="../../assets/img/contact-image.png" alt="">
+            </div>
+            <!-- Contenedor de la derecha -->
+            <div class="container-right">
+                <!-- Formulario de contacto -->
+                <form action="" class="form-contact">
+                    <h2>Contáctanos</h2>
+                    <!-- Contenido del formulario -->
+                    <div class="content">
+                        <!-- Contenedor de campo de formulario -->
+                        <div class="input-box">
+                            <label for="">Nombre Completo</label>
+                            <input type="text" placeholder="Ingrese su nombre completo" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="">Correo Electrónico</label>
+                            <input type="email" placeholder="Ingrese su correo electrónico" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="">Número teléfonico</label>
+                            <input type="tel" placeholder="Ingrese su número teléfonico" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="">Ciudad</label>
+                            <input type="text" placeholder="Ingrese su ciudad" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="">Mensaje</label>
+                            <textarea name="" id=""  cols="100" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <!-- Contenedor de campo de terminos y condiciones -->
+                    <div class="terms">
+                        <input type="radio" name="term&conditions">
+                        <label for="term&conditions">Aceptar terminos y condiciones</label>
+                    </div>
+                    <!-- Contenedor de botón de formulario -->
+                    <div class="button-container">
+                        <button type="submit">Envíar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Fin de sección de formulario -->
+        <!-- Inicio de sección de mapa y datos de contacto -->
+        <section class="map-section">
+            <!-- Mapa de contacto -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8708984342657!2d-74.09440462636066!3d4.617110142379315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f996f79f4e283%3A0x5856b6b66ab6bd34!2sCENIGRAF!5e0!3m2!1sen!2sco!4v1715321490407!5m2!1sen!2sco" width="500" height="400" style="border:4;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Información de contacto -->
+            <div class="map-info">
+                <h2>Ubícanos</h2>
+                <p>Cl. 15 #31-42, Bogotá CENIGRAF</p>
+                <!-- Contenedor de redes sociales -->
+                <div class="social-media-contact">
+                    <a href="" class="fa fa-whatsapp"></a>
+                    <a href="" class="fa fa-twitter"></a>
+                    <a href="" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de sección de mapa y datos de contacto -->
+    </main>
+
+    <!-- Inicio de contenedor scroll -->
+    <div class="scroll">        
+        <a href="#top">
+            <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+            Ir arriba
+        </a>
+    </div>
+    <!-- Fin de contenedor scroll -->
+
+    <!-- Inicio de footer -->
     <footer>
+
+        <!-- Contenido de footer -->
         <div class="footer-content">
+
             <h3>Sensa Series</h3>
+            
+            <!-- Lista que contiene redes sociales -->
             <ul class="social-media">
                 <li><a href="" class="fa fa-facebook"></a></li>
                 <li><a href="" class="fa fa-twitter"></a></li>
                 <li><a href="" class="fa fa-youtube"></a></li>
             </ul>
+            
+            <!-- Contedor de links de footer -->
             <div class="footer-menu">
+
+                <!-- Lista de links -->
                 <ul class="footer-menu-list">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./contact.html">Contacto</a></li>
                 </ul>
             </div>
+
         </div>
+
+        <!-- Contenedor de créditos de footer -->
         <div class="footer-credits">
             <p>Diseñado Por -Sebastián Sánchez ADSO 2900002</p>
         </div>
     </footer>
+    <!-- Fin de footer -->
     
+    <script src="../js/contact.js"></script>
 </body>
-<script src="../js/contact.js"></script>
 
 </html>
