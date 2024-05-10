@@ -6,6 +6,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main{
     background-color: #000;
 }
@@ -276,7 +280,7 @@ header {
 }
 
 .scroll:hover {
-    transform: translateY(-15px);
+    transform: translateY(-6px);
     color: #1565c0;
 }
 
