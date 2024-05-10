@@ -72,6 +72,10 @@ header {
     border: 2px solid #1565c0;
 }
 
+.series-button i{
+    margin-left: 6px;
+}
+
 #menu-icon {
     color: #fff;
     font-size: 42px;
@@ -146,9 +150,10 @@ header {
 
 .info-section {
     background-color: #fff;
-    display: flex;
-    padding: 15px 15px 0 15px;
-    gap: 4px
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding: 25px 25px 0 25px;
 }
 
 .info-text {
@@ -160,6 +165,7 @@ header {
     text-align: justify;
     letter-spacing: 1px;
     line-height: 32px;
+    margin-top: 20px;
 }
 
 .catalogue {
@@ -168,6 +174,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.catalogue h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 900;
 }
 
 .card {
@@ -254,12 +267,17 @@ header {
     position: fixed;
     top: 92%;
     right: 7%;
-    transform: translateY(-50%);
+    transition: all .6s ease;
 }
 
 .scroll a {
    font-size: 16px;
    color: #00a6fb; 
+}
+
+.scroll:hover {
+    transform: translateY(-15px);
+    color: #1565c0;
 }
 
 .scroll i {
@@ -318,6 +336,7 @@ footer {
 .social-media li a:hover {
     transform: translateY(-5px);
     color: #1565c0;
+    border: 1px solid #1565c0;
 }
 
 .footer-menu {
@@ -343,6 +362,7 @@ footer {
 
 .footer-menu ul li a:hover {
     color: #1565c0;
+    border: 1px solid #1565c0;
 }
 
 .footer-credits {
@@ -384,6 +404,7 @@ footer {
     #menu-icon {
         display: block;
     }
+
     .series-text h1 {
         font-size: 40px;
     }
@@ -439,9 +460,15 @@ footer {
         object-fit: contain;
     }
 
+    .info-section {
+        grid-template-columns: 1fr;
+        height: auto;  
+    }
+
 }
 
 @media ( max-width: 580px ) {
+
     .series-section {
         height: 150vh;
     }
