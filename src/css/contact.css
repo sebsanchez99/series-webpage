@@ -6,7 +6,8 @@
 }
 
 .form-container {
-    margin: 100px 10px;
+    background-color: black;
+    padding: 250px 10px 70px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -17,16 +18,16 @@
     max-width: 500px;
     padding: 28px;
     margin: 28px;
-    box-shadow: 0 15px 20px #abb2b9;
-    background-color: #90caf9;
+    border-radius: 15px;
+    background-color: #00a6fb;
 }
 
 .container-left img {
     width: 100%;
 }
 
-h2 {
-    color: #1565c0;
+.form-contact h2 {
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
     text-align: left;
@@ -65,6 +66,10 @@ h2 {
     outline: none;
 }
 
+.input-box input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgb(0,0, 0,0.2);   
+}
+
 .input-box textarea {
     width: 100%;
     border-radius: 5px;
@@ -74,13 +79,13 @@ h2 {
 
 .input-box label {
     width:  95%;
-    color: #1565c0;
+    color: #fff;
     font-weight: bold;
     margin: 5px 0;
 }
 
 .terms {
-    color: grey;
+    color: #fff;
 }
 
 .terms label {
@@ -107,4 +112,63 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #64b5f6;
+}
+
+.map-section {
+    padding-bottom: 4%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.map-section h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.map-info p {
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+.social-media-contact {
+    padding: 13px;
+}
+
+.social-media-contact a {
+    padding: 5px;
+    font-size: 25px;
+    margin-left: 13px;
+    color: #64b5f6;
+    border: solid 2px #64b5f6;
+    border-radius: 50%;
+    transition: all .7s ease;
+}
+
+.social-media-contact a:hover {
+    scale: calc(1.1);
+    color: #1565c0;
+    border: solid 2px #1565c0;
+}
+
+
+@media ( max-width: 950px ) {
+    .map-info {
+        text-align: center;
+    }
+
+    .map-section p {
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        width: 250px;
+    }
 }
