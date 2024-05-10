@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos de letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Importación de iconos de Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Estilos css -->
     <link rel="stylesheet" href="../src/css/index.css">
     <title>Inicio</title>
 </head>
@@ -15,7 +18,7 @@
 <body>
     
     <header>
-            
+        <!-- Inicio de menú de navegación -->
         <a href="index.html" class="logo">
             <img src="../assets/img/logo.png" alt="Logo" >
         </a>
@@ -25,41 +28,63 @@
             <li><a href="index.html"><i class="fa fa-home"></i> Inicio</a></li>
             <li><a href="screens/contact.html"><i class="fa fa-envelope"></i> Contacto</a></li>
         </ul>
+
+        <!-- Cotenido de botón  -->
         <div class="right-content">
             <a href="https://www.netflix.com/" class="series-button">Ver Series<i class="fa fa-play" aria-hidden="true"></i></a>
             <div class="fa fa-bars" id="menu-icon"></div>
         </div>
+        <!-- Fin de menú de navegación -->
     
     </header>
     
     <main>
+        <!-- Inicio de sección principal -->
         <section class="series-section" id="top">
+            <!-- Contenedor de texto de sección principal -->
             <div class="series-text">
                 <h5>¿Buscas tu próxima serie favorita?</h5>
                 <h1>SensaSeries: Donde las series son magia</h1>
                 <p>Descubre recomendaciones personalizadas y encuentra las joyas ocultas de la televisión.</p>
                 
+                <!-- Contenedor de botón de sección principal -->
                 <div class="catalogue-button-container">
                     <a href="#catalogue" class="catalogue-button">Ver catálogo</a>
                 </div>
 
             </div>
+
+            <!-- Contenedor de imagen -->
             <div class="main-image">
                 <img src="../assets/img/main-image.png" alt="">
             </div>
-        </section>
 
+        </section>
+        <!-- Fin de sección principal -->
+
+        <!-- Inicio de sección informativa -->
         <section class="info-section">
+            
+            <!-- Contenedor de imagen de sección informativa -->
             <div class="info-img">
                 <img src="../assets/img/info-image.png" alt="">
             </div>
+
+            <!-- Contenedor de texto de sección informativa -->
             <div class="info-text">
                 <h3>Las Últimas Novedades en Series</h3>
                 <p>Si estás buscando las series más recientes y emocionantes, estás en el lugar correcto. Cada semana, analizamos las nuevas producciones de plataformas como Netflix, Amazon Prime, HBO Max y más para traerte lo mejor en entretenimiento televisivo. Desde estrenos de temporada hasta series completamente nuevas, te mantenemos al tanto de todo lo que está en tendencia. No te pierdas las historias más frescas y los personajes más impactantes. ¡Sigue con nosotros para no perderte ninguna novedad!</p>
             </div>            
+
         </section>
+        <!-- Fin de sección informativa -->
+
+        <!-- Inicio de sección de catálogo -->
         <section class="catalogue" id="catalogue">
+
             <h2>Catálogo</h2>
+            
+            <!-- Contenedor de carta de serie -->
             <div class="card">
                 <div class="face front">
                     <img src="/assets/img/breaking_bad_card.png" alt="" class="img-card">
@@ -121,33 +146,53 @@
             </div>
 
         </section>
+        <!-- Fin de sección de catálogo -->
+
     </main>
+
+    <!-- Inicio de contenedor scroll -->
     <div class="scroll">        
         <a href="#catalogue">
             <i class="fa fa-hand-o-down" aria-hidden="true"></i>
             Ir abajo
         </a>
     </div>
-    
+    <!-- Fin de contenedor scroll -->
+
+    <!-- Inicio de footer -->
     <footer>
+
+        <!-- Contenido de footer -->
         <div class="footer-content">
+
             <h3>Sensa Series</h3>
+            
+            <!-- Lista que contiene redes sociales -->
             <ul class="social-media">
                 <li><a href="" class="fa fa-facebook"></a></li>
                 <li><a href="" class="fa fa-twitter"></a></li>
                 <li><a href="" class="fa fa-youtube"></a></li>
             </ul>
+
+            <!-- Contedor de links de footer -->
             <div class="footer-menu">
+
+                <!-- Lista de links -->
                 <ul class="footer-menu-list">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="screens/contact.html">Contacto</a></li>
                 </ul>
             </div>
+
         </div>
+
+        <!-- Contenedor de créditos de footer -->
         <div class="footer-credits">
             <p>Diseñado Por -Sebastián Sánchez ADSO 2900002</p>
         </div>
+
     </footer>
+    <!-- Fin de footer -->
 
     <script src="js/script.js"></script>
 </body>
