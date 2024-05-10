@@ -14,6 +14,8 @@ main{
     background-color: #000;
 }
 
+
+/* Inicio estilos para menú de navegación */
 header {
     position: fixed;
     background-color: #000;
@@ -88,7 +90,10 @@ header {
     margin-left: 25px;
     display: none;
 }
+/* Fin estilos para menú de navegación */
 
+
+/* Inicio estilos para sección principal */
 .series-section {
     position: relative;
     padding: 0 14%;
@@ -151,7 +156,10 @@ header {
 .catalogue-button:hover {
     transform: scale(1.1);
 }
+/* Fin estilos para sección principal */
 
+
+/* Inicio estilos para sección de información */
 .info-section {
     background-color: #fff;
     display: grid;
@@ -171,7 +179,10 @@ header {
     line-height: 32px;
     margin-top: 20px;
 }
+/* Fin estilos para sección de información */
 
+
+/* Inicio estilos para sección de catálogo */
 .catalogue {
     background-color: #fff;
     padding: 70px 0;
@@ -266,7 +277,10 @@ header {
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
+/* Fin estilos para sección de catálogo */
 
+
+/* Inicio de estilos para scroll */
 .scroll {
     position: fixed;
     top: 92%;
@@ -288,7 +302,10 @@ header {
     font-size: 20px;
     margin-right: 6px;
 }
+/* Fin de estilos para scroll */
 
+
+/* Inicio estilos de footer */
 footer {
     bottom: 0;
     left: 0;
@@ -381,8 +398,10 @@ footer {
     font-size: 20px;
     word-spacing: 2px;
 }
+/* Fin estilos de footer */
 
-/* Diseño responsive*/
+
+/* Diseño responsive */
 @media ( max-width: 1770px ) {
     header {
         padding: 22px 4%;
@@ -404,6 +423,7 @@ footer {
     }
 }
 
+/* Diseño responsive para tablets */
 @media ( max-width: 950px ) {
     #menu-icon {
         display: block;
@@ -471,6 +491,7 @@ footer {
 
 }
 
+/* Diseño responsive para dispositivos móviles */
 @media ( max-width: 580px ) {
 
     .series-section {
